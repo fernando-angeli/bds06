@@ -19,7 +19,6 @@ public class GenreController {
 
     @GetMapping
     public ResponseEntity<List<GenreDTO>> findAll(){
-        List<GenreDTO> list = service.findAll();
-        return ResponseEntity.ok().body(list);
+        return ResponseEntity.ok().body(service.findAll());
     }
 }
